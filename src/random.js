@@ -9,14 +9,14 @@ exports.randNumber = randNumber;
 
 //returns random element of array
 var randSelect = function(arr){
-	return arr[Math.floor((Math.random() * arr.length-1) + 0)];
+	return arr[Math.floor((Math.random() * arr.length-1) + 1)];
 };
 
 exports.randSelect = randSelect;
 
 //returns a randomly sized slice of an array
 var randArrayElements = function(arr){
-	return arr.slice(0, Math.floor((Math.random() * arr.length-1) + 0));
+	return arr.slice(0, Math.floor((Math.random() * arr.length-1) + 1));
 };
 
 exports.randArrayElements = randArrayElements;

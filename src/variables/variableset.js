@@ -9,7 +9,8 @@ var VariableSet = (function(){
 	var randSelect = function(arr){
 		return arr[Math.floor((Math.random() * arr.length-1) + 1)];
 	};
-	function VariableSet(){
+	function VariableSet(name){
+		this.name = name || ""
 		this.set = {};
 		this.list = [];
 		this.title = false;
