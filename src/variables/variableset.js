@@ -3,6 +3,8 @@
 //main json file that contains variable names
 var names = require("./names.json");
 
+exports.words = names;
+
 
 var VariableSet = (function(){
 	//private function to randomly select from array
@@ -10,7 +12,7 @@ var VariableSet = (function(){
 		return arr[Math.floor((Math.random() * arr.length-1) + 1)];
 	};
 	function VariableSet(name){
-		this.name = name || ""
+		this.name = name || "";
 		this.set = {};
 		this.list = [];
 		this.title = false;

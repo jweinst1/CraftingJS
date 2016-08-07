@@ -3,8 +3,6 @@
  */
 var names = require("./src/variables/variableset.js");
 
-var test = new names.VariableSet();
+//main export of package
+module.exports = names;
 
-console.log(test.newVar());
-console.log(test.newVar());
-console.log(test.pickVar());
