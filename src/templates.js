@@ -2,7 +2,7 @@
 
 
 var templates = {
-	//arguments[0] is always indent
+	//arguments[0] is always spacer
 	"var":function(){
 		return arguments[0] + "var " + arguments[1] + " = " + arguments[2] + ";";
 	},
@@ -13,5 +13,3 @@ var templates = {
 };
 
 exports.templates = templates;
-
-console.log(templates.var("foo", 6));
